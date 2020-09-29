@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+
+target 'test' do
+pod 'ZFPlayer', '~> 3.0'
+pod 'ZFPlayer/ControlView', '~> 3.0'
+pod 'ZFPlayer/AVPlayer', '~> 3.0'
+
+pod 'FMDB'
+end
+

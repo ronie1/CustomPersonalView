@@ -1,0 +1,30 @@
+PODS:
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - ZFPlayer (3.3.3):
+    - ZFPlayer/Core (= 3.3.3)
+  - ZFPlayer/AVPlayer (3.3.3):
+    - ZFPlayer/Core
+  - ZFPlayer/ControlView (3.3.3):
+    - ZFPlayer/Core
+  - ZFPlayer/Core (3.3.3)
+
+DEPENDENCIES:
+  - FMDB
+  - ZFPlayer (~> 3.0)
+  - ZFPlayer/AVPlayer (~> 3.0)
+  - ZFPlayer/ControlView (~> 3.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FMDB
+    - ZFPlayer
+
+SPEC CHECKSUMS:
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  ZFPlayer: 1310252c253b9958e4fcd411e706b99c31834eaf
+
+PODFILE CHECKSUM: 672848c5f5ec2c7caf2e50f25ffa10e1d809c9ea
+
+COCOAPODS: 1.7.5
