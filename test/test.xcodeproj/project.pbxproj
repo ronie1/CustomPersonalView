@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		A00CD2982523002800CDD5FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A00CD2962523002800CDD5FF /* LaunchScreen.storyboard */; };
 		A00CD2A32523002800CDD5FF /* testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00CD2A22523002800CDD5FF /* testTests.swift */; };
 		A00CD2AE2523002800CDD5FF /* testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00CD2AD2523002800CDD5FF /* testUITests.swift */; };
+		A069926225231C1900F4F8E4 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A069926125231C1900F4F8E4 /* testViewController.swift */; };
 		A5688BCA8F8F252FC7A932F9 /* Pods_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBF7931219B9C41A21DBCDC /* Pods_test.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,8 @@
 		A00CD2A92523002800CDD5FF /* testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00CD2AD2523002800CDD5FF /* testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testUITests.swift; sourceTree = "<group>"; };
 		A00CD2AF2523002800CDD5FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A069925725231BEC00F4F8E4 /* test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test-Bridging-Header.h"; sourceTree = "<group>"; };
+		A069926125231C1900F4F8E4 /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 		B75241E4BDE3E78CB60BAB91 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,7 +90,6 @@
 				96866C70069A12B77DE2846C /* Pods-test.debug.xcconfig */,
 				B75241E4BDE3E78CB60BAB91 /* Pods-test.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -127,10 +129,12 @@
 				A00CD28B2523002500CDD5FF /* AppDelegate.swift */,
 				A00CD28D2523002500CDD5FF /* SceneDelegate.swift */,
 				A00CD28F2523002500CDD5FF /* ViewController.swift */,
+				A069926125231C1900F4F8E4 /* testViewController.swift */,
 				A00CD2912523002500CDD5FF /* Main.storyboard */,
 				A00CD2942523002800CDD5FF /* Assets.xcassets */,
 				A00CD2962523002800CDD5FF /* LaunchScreen.storyboard */,
 				A00CD2992523002800CDD5FF /* Info.plist */,
+				A069925725231BEC00F4F8E4 /* test-Bridging-Header.h */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -223,6 +227,7 @@
 				TargetAttributes = {
 					A00CD2872523002500CDD5FF = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 					A00CD29D2523002800CDD5FF = {
 						CreatedOnToolsVersion = 12.0.1;
@@ -347,6 +352,7 @@
 			files = (
 				A00CD2902523002500CDD5FF /* ViewController.swift in Sources */,
 				A00CD28C2523002500CDD5FF /* AppDelegate.swift in Sources */,
+				A069926225231C1900F4F8E4 /* testViewController.swift in Sources */,
 				A00CD28E2523002500CDD5FF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,6 +530,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S2M9W9G946;
 				INFOPLIST_FILE = test/Info.plist;
@@ -533,6 +540,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rubang.xxb.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "test/test-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -544,6 +553,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S2M9W9G946;
 				INFOPLIST_FILE = test/Info.plist;
@@ -553,6 +563,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rubang.xxb.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "test/test-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
