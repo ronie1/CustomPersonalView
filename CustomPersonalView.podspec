@@ -26,7 +26,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "http://github.com/ronie/CustomPersonalView.git", :tag => spec.version}
 
-  spec.source_files  = "CustomPersonalView/*.{h,m}"
+  spec.source_files  = "CustomPersonalView/**/*"
   spec.requires_arc = true
   spec.ios.deployment_target = "9.0"
 
